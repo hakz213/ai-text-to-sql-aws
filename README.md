@@ -1,10 +1,14 @@
-# ai-text-to-sql-aws
+# AI Text-to-SQL (AWS)
 
-What it does:
-Natural language → SQL → Aurora → results
+## Overview
+This project converts natural language questions into SQL queries using Amazon Bedrock, executes them on Aurora PostgreSQL via AWS Lambda, and returns real data.
 
-Tech:
-AWS Lambda, Bedrock, Aurora, VPC, pg8000
+## Architecture
+User → Lambda → Bedrock → SQL → Aurora → Result
 
-Architecture:
-User → API → Lambda → Bedrock → SQL → DB
+## Technologies
+- AWS Lambda
+- Amazon Bedrock (Claude Haiku)
+- Aurora PostgreSQL
+- pg8000
+- VPC + Endpoints
